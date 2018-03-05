@@ -8,4 +8,7 @@ public class Math extends Subjects {
     public Math(String info, String name, Topic topic) {
         super(info, name, topic);
     }
+
+    public Math() {
+    }
 }

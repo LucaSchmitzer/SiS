@@ -8,4 +8,8 @@ public class ComputerScience extends Subjects {
     public ComputerScience(String info, String name, Topic topic) {
         super(info, name, topic);
     }
+
+    public ComputerScience() {
+
+    }
 }

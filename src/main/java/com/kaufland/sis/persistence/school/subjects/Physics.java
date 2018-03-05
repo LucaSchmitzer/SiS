@@ -8,4 +8,7 @@ public class Physics extends Subjects{
     public Physics(String info, String name, Topic topic) {
         super(info, name, topic);
     }
+
+    public Physics() {
+    }
 }

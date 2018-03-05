@@ -9,4 +9,7 @@ public class German extends Subjects{
     public German(String info, String name, Topic topic) {
         super(info, name, topic);
     }
+
+    public German() {
+    }
 }
