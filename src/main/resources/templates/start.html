@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Lato", sans-serif
+        }
+
+        .w3-bar, h1, button {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .fa-anchor, .fa-coffee {
+            font-size: 200px
+        }
+    </style>
+</head>
+<!-- Navbar -->
+<body>
+<form action="#" th:action="@{/Start}" th:object="${student}" method="post" enctype="multipart/form-data">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">School Is Stupid</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a type="submit" th:href="@{/index}">Home</a></li>
+                <li class="active"><a>START</a></li>
+                <li><a type="submit" th:href="@{/We}">WE</a></li>
+                <li><a type="submit" th:href="@{/About}">ABOUT</a></li>
+                <li><a type="submit" th:href="@{/SignIn}">Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="form-group-row">
+        <h1>Get into a new World of Learning</h1>
+        <div class="col-xs-2">
+            <label for="firstnameI">First Name</label>
+            <input class="form-control" id="firstnameI" type="text" th:field="*{firstName}"/>
+            <label for="lastnameI">Last Name</label>
+            <input class="form-control" id="lastnameI" type="text" th:field="*{lastName}"/>
+            <label for="usernameI">Username</label>
+            <input class="form-control" id="usernameI" type="text" th:field="*{username}"/>
+            <label for="emailI">E-Mail</label>
+            <input class="form-control" id="emailI" type="text" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}" th:field="*{email}"/>
+            <label for="passwordI">Password</label>
+            <input class="form-control" id="passwordI" type="password" th:field="*{password}"/>
+            <p></p>
+            <button id="startStudent" type="submit" about="submit" class="btn btn-success">Start</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>

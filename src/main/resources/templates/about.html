@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Lato", sans-serif
+        }
+
+        .w3-bar, h1, button {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .fa-anchor, .fa-coffee {
+            font-size: 200px
+        }
+    </style>
+</head>
+<!-- Navbar -->
+<body>
+<form action="#" th:action="@{/About}" method="post">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">School IsStupid</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a type="submit" th:href="@{/index}">Home</a></li>
+                <li><a type="submit" th:href="@{/Start}">START</a></li>
+                <li><a type="submit" th:href="@{/We}">WE</a></li>
+                <li class="active"><a>ABOUT</a></li>
+                <li><a type="submit" th:href="@{/SignIn}">Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
+</form>
+</body>
+</html>
