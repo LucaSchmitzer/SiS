@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 @Scope("session")
-public class MeController {
+public class WeController {
 
-    private static final String URL = "/We";
+    private static final String URL = "/we";
 
     @GetMapping(URL)
     public String getMe() {

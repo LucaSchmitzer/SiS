@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Scope("session")
 public class StartController {
 
-    private static final String URL = "/Start";
+    private static final String URL = "/start";
 
     @Autowired
     StudentService studentService;
@@ -26,7 +26,7 @@ public class StartController {
     @PostMapping(URL)
     public String buttonStartClicked(@ModelAttribute Student student) {
         checkVarAvailability(student);
-        return "redirect:" + "/Index";
+        return "redirect:" + "/index";
     }
 
     private void checkVarAvailability(Student student) {

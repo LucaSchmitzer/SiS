@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Scope("session")
 public class AboutController {
 
-    private static final String URL = "/About";
+    private static final String URL = "/about";
 
     @GetMapping(URL)
     public String getAbout(){

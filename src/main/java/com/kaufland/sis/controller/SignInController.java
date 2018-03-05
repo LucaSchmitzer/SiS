@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Scope("session")
 public class SignInController {
 
-    private static final String URL = "/SignIn";
+    private static final String URL = "/sign_in";
 
     @GetMapping(URL)
     public String getSignIn() {

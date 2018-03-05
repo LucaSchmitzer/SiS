@@ -2,7 +2,7 @@ package com.kaufland.sis.persistence.school;
 
 import com.kaufland.sis.persistence.school.subjects.topic.Topic;
 
-public abstract class Subjects {
+public class Subjects {
 
     private String info;
 
@@ -19,6 +19,9 @@ public abstract class Subjects {
         schoolSystem(String name) {
             this.name = name;
         }
+    }
+
+    public Subjects() {
     }
 
     public Subjects(String info, String name, Topic topic) {
