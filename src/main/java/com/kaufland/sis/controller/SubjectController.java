@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class SubjectController {
 
-    private static final String URL = "/subjects";
+    private static final String URL = "/subject";
 
     @GetMapping
     public String getMapping (){
