@@ -1,7 +1,7 @@
 package com.kaufland.sis.controller;
 
 import com.kaufland.sis.doamin.StudentService;
-import com.kaufland.sis.persistence.school.Student;
+import com.kaufland.sis.persistence.school.students.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;

@@ -1,8 +1,19 @@
-package com.kaufland.sis.persistence.school;
+package com.kaufland.sis.persistence.school.subject;
 
-import com.kaufland.sis.persistence.school.subjects.topic.Topic;
+import com.kaufland.sis.persistence.school.subject.topic.Topic;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Subjects {
+
+
+   @Id
+   @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
 
     private String info;
 

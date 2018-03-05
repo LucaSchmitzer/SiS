@@ -1,16 +1,15 @@
 package com.kaufland.sis.controller.global;
 
 
-import com.kaufland.sis.persistence.school.Student;
-import com.kaufland.sis.persistence.school.Subjects;
-import com.kaufland.sis.persistence.school.subjects.ComputerScience;
-import com.kaufland.sis.persistence.school.subjects.German;
-import com.kaufland.sis.persistence.school.subjects.Math;
-import com.kaufland.sis.persistence.school.subjects.Physics;
+import com.kaufland.sis.persistence.school.students.Student;
+import com.kaufland.sis.persistence.school.subject.Subjects;
+import com.kaufland.sis.persistence.school.subject.subjects.ComputerScience;
+import com.kaufland.sis.persistence.school.subject.subjects.German;
+import com.kaufland.sis.persistence.school.subject.subjects.Math;
+import com.kaufland.sis.persistence.school.subject.subjects.Physics;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
-import javax.security.auth.Subject;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,6 +44,5 @@ public class ModelAttributes {
     public List<Subjects> subjects(){
         return subjectsList;
     }
-
 
 }

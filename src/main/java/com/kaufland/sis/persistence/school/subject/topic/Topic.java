@@ -1,4 +1,4 @@
-package com.kaufland.sis.persistence.school.subjects.topic;
+package com.kaufland.sis.persistence.school.subject.topic;
 
 public class Topic {
 

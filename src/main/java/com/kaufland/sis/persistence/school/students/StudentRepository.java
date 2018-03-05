@@ -1,4 +1,4 @@
-package com.kaufland.sis.persistence.school;
+package com.kaufland.sis.persistence.school.students;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

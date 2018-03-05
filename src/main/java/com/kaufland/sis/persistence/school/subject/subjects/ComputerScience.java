@@ -1,7 +1,7 @@
-package com.kaufland.sis.persistence.school.subjects;
+package com.kaufland.sis.persistence.school.subject.subjects;
 
-import com.kaufland.sis.persistence.school.Subjects;
-import com.kaufland.sis.persistence.school.subjects.topic.Topic;
+import com.kaufland.sis.persistence.school.subject.Subjects;
+import com.kaufland.sis.persistence.school.subject.topic.Topic;
 
 public class ComputerScience extends Subjects {
 

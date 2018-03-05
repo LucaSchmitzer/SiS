@@ -1,7 +1,7 @@
 package com.kaufland.sis.doamin;
 
-import com.kaufland.sis.persistence.school.Student;
-import com.kaufland.sis.persistence.school.StudentRepository;
+import com.kaufland.sis.persistence.school.students.Student;
+import com.kaufland.sis.persistence.school.students.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

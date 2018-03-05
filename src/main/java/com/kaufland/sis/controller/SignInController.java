@@ -1,6 +1,6 @@
 package com.kaufland.sis.controller;
 
-import com.kaufland.sis.persistence.school.Student;
+import com.kaufland.sis.persistence.school.students.Student;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

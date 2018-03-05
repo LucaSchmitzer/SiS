@@ -1,4 +1,4 @@
-package com.kaufland.sis.persistence.school;
+package com.kaufland.sis.persistence.school.students;
 
 import jdk.nashorn.internal.ir.annotations.Ignore;
 
@@ -25,7 +25,7 @@ public class Student {
     private String password;
 
 
-    // private List<Subjects> subjects = new ArrayList<>();
+    // private List<Subjects> subject = new ArrayList<>();
 
     public Student(String firstName, String lastName, String username, String email, String password, Long id) {
         this.firstName = firstName;
