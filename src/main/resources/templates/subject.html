@@ -23,6 +23,24 @@
             </ul>
         </div>
     </nav>
+
+    <div th:if="${not #lists.isEmpty(subjectsList)}">
+        <h2>Subject List</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Topic</th>
+                <th>Info</th>
+            </tr>
+            </thead>
+            <tr class="listRow" th:each="subject : ${subjectsList}">
+                <td><a th:text="${subject.name}"></a></td>
+                <td><a type="submit" th:text="${subject.topic}"></a></td>
+                <td><a type="submit" th:text="${subject.info}"></a></td>
+            </tr>
+        </table>
+    </div>
 </form>
 </body>
 </html>

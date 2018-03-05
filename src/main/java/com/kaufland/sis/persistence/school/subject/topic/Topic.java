@@ -6,9 +6,9 @@ public class Topic {
 
     private String content;
 
-    public Topic(String content, String header) {
-        this.content = content;
+    public Topic(String header, String content) {
         this.header = header;
+        this.content = content;
     }
 
     public Topic() {
@@ -20,5 +20,13 @@ public class Topic {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String getHeader() {
+        return header;
+    }
+
+    public void setHeader(String header) {
+        this.header = header;
     }
 }

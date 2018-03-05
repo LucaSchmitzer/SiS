@@ -30,6 +30,14 @@ public class ModelAttributes {
 
     private List<Subjects> subjectsList = new ArrayList<>();
 
+    private List<Subjects> getAllSubs(){
+        subjectsList.add(german);
+        subjectsList.add(math);
+        subjectsList.add(physics);
+        subjectsList.add(computerScience);
+        return subjectsList;
+    }
+
     @ModelAttribute("student")
     public Student student(){
         return student;
@@ -42,6 +50,7 @@ public class ModelAttributes {
 
     @ModelAttribute("subjectList")
     public List<Subjects> subjects(){
+        subjectsList = getAllSubs();
         return subjectsList;
     }
 

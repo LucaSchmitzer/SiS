@@ -21,7 +21,7 @@ public class Subjects {
 
     private Topic topic;
 
-    public enum schoolSystem {
+   /* public enum schoolSystem {
         HIGHSCHOOL("high school"), SECONDARYSCHOOL("secondary school"),
         ELEMENTARYSCHOOL("elementary school"), SECONDARYMODERNSCHOOL("secondary modern school");
 
@@ -30,7 +30,7 @@ public class Subjects {
         schoolSystem(String name) {
             this.name = name;
         }
-    }
+    }*/
 
     public Subjects() {
     }
@@ -56,4 +56,6 @@ public class Subjects {
     public void setName(String name) {
         this.name = name;
     }
+
+
 }
