@@ -20,7 +20,7 @@
 </head>
 <!-- Navbar -->
 <body>
-<form action="#" th:action="@{/about}" method="post">
+<form action="#" th:action="@{/index}" method="post">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -31,15 +31,13 @@
                 <li><a type="submit" th:href="@{/start}">Start</a></li>
                 <li><a type="submit" th:href="@{/subject}">Subject</a></li>
                 <li><a type="submit" th:href="@{/we}">We</a></li>
-                <li class="active"><a>ABOUT</a></li>
+                <li><a type="submit" th:href="@{/about}">About</a></li>
                 <li><a type="submit" th:href="@{/sign_in}">Sign In</a></li>
             </ul>
         </div>
     </nav>
-    <div>
-        <h1> About</h1>
-        <p><h4>I wrote this Platform for those who don't like their school or teachers.</h4></p>
-    </div>
+    <h1>German</h1>
+
 </form>
 </body>
 </html>
