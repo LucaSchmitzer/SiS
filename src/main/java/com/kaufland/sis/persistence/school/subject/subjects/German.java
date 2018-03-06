@@ -2,7 +2,6 @@ package com.kaufland.sis.persistence.school.subject.subjects;
 
 
 import com.kaufland.sis.persistence.school.subject.Subjects;
-import com.kaufland.sis.persistence.school.subject.topic.Topic;
 
 public class German extends Subjects {
 

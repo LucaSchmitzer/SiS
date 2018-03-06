@@ -28,6 +28,8 @@ public class Subjects {
     public Subjects(String info, String name, String header, String content) {
         this.info = info;
         this.name = name;
+        this.header = header;
+        this.content = content;
     }
 
     public String getInfo() {

@@ -10,7 +10,7 @@ public class IndexController {
 
     private static final String URL = "/index";
 
-    @GetMapping("/index")
+    @GetMapping(URL)
     public String getIndex() {
         return URL;
     }

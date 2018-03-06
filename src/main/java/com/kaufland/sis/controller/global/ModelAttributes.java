@@ -20,17 +20,17 @@ public class ModelAttributes {
 
     private Subjects subject = new Subjects();
 
-    private German german = new German();
-
-    private Math math = new Math();
-
-    private Physics physics = new Physics();
-
-    private ComputerScience computerScience = new ComputerScience();
-
     private List<Subjects> subjectsList = new ArrayList<>();
 
     private List<Subjects> getAllSubs(){
+        German german = new German("The german language", "German", "Header", "Lernen");
+
+        Math math = new Math("Mathematics", "Math", "Header", "Lernen");
+
+        Physics physics = new Physics("Physics", "Physics", "Header", "");
+
+        ComputerScience computerScience = new ComputerScience("Information Technology", "IT", "<Header>", "Develop");
+
         subjectsList.add(german);
         subjectsList.add(math);
         subjectsList.add(physics);

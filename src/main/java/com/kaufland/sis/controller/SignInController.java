@@ -19,7 +19,7 @@ public class SignInController {
     }
 
     @PostMapping(URL)
-    public String buttonLoginClicked(@ModelAttribute Student student) {
+    public String buttonLoginClicked() {
         checkLoginData();
         return "redirect:" + URL;
     }

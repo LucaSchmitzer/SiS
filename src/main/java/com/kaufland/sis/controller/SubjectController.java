@@ -8,7 +8,7 @@ public class SubjectController {
 
     private static final String URL = "/subject";
 
-    @GetMapping
+    @GetMapping(URL)
     public String getMapping (){
         return URL;
     }

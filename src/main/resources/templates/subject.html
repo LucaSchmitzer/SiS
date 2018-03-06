@@ -24,19 +24,21 @@
         </div>
     </nav>
 
-    <div th:if="${not #lists.isEmpty(subjectsList)}">
+    <div th:if="${not #lists.isEmpty(subjectList)}">
         <h2>Subject List</h2>
-        <table>
+        <table border="8" cellspacing="10" cellpadding="20">
             <thead>
             <tr>
-                <th>Name</th>
-                <th>Topic</th>
-                <th>Info</th>
+                <th> Name </th>
+                <th> Header </th>
+                <th> Content </th>
+                <th> Info </th>
             </tr>
             </thead>
-            <tr class="listRow" th:each="subject : ${subjectsList}">
+            <tr class="listRow" th:each="subject : ${subjectList}">
                 <td><a th:text="${subject.name}"></a></td>
-                <td><a type="submit" th:text="${subject.topic}"></a></td>
+                <td><a type="submit" th:text="${subject.header}"></a></td>
+                <td><a type="submit" th:text="${subject.content}"></a></td>
                 <td><a type="submit" th:text="${subject.info}"></a></td>
             </tr>
         </table>
