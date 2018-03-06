@@ -6,12 +6,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Subjects {
-
+public class Subject {
 
    @Id
    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+
+    private static final String URL = "/subject/computer_science";
 
     private String info;
 
@@ -22,10 +23,10 @@ public class Subjects {
     private String content;
 
 
-    public Subjects() {
+    public Subject() {
     }
 
-    public Subjects(String info, String name, String header, String content) {
+    public Subject(String info, String name, String header, String content) {
         this.info = info;
         this.name = name;
         this.header = header;

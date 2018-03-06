@@ -25,7 +25,7 @@ public class Student {
     private String password;
 
 
-    // private List<Subjects> subject = new ArrayList<>();
+    // private List<Subject> subjects = new ArrayList<>();
 
     public Student(String firstName, String lastName, String username, String email, String password, Long id) {
         this.firstName = firstName;

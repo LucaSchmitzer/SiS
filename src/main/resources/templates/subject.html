@@ -36,10 +36,10 @@
             </tr>
             </thead>
             <tr class="listRow" th:each="subject : ${subjectList}">
-                <td><a th:text="${subject.name}"></a></td>
-                <td><a type="submit" th:text="${subject.header}"></a></td>
-                <td><a type="submit" th:text="${subject.content}"></a></td>
-                <td><a type="submit" th:text="${subject.info}"></a></td>
+                <td><a type="submit" th:href="@{/subjects/(${subject.name})}" th:text="${subject.name}"></a></td>
+                <td><a th:text="${subject.header}"></a></td>
+                <td><a th:text="${subject.content}"></a></td>
+                <td><a th:text="${subject.info}"></a></td>
             </tr>
         </table>
     </div>
