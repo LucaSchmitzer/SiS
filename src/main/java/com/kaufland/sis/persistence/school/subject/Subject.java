@@ -8,11 +8,11 @@ import javax.persistence.Id;
 @Entity
 public class Subject {
 
-   @Id
-   @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    private static final String URL = "/subject/computer_science";
+    private String url;
 
     private String info;
 
@@ -22,11 +22,12 @@ public class Subject {
 
     private String content;
 
-
     public Subject() {
+
     }
 
-    public Subject(String info, String name, String header, String content) {
+    public Subject(String url, String info, String name, String header, String content) {
+        this.url = url;
         this.info = info;
         this.name = name;
         this.header = header;
@@ -71,5 +72,13 @@ public class Subject {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

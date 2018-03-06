@@ -28,13 +28,13 @@ public class ModelAttributes {
     private List<Subject> subjectList = new ArrayList<>();
 
     private List<Subject> getAllSubjects() {
-        German german = new German("The german language", "German", "Header", "Lernen");
+        German german = new German("/subjects/german" , "The german language", "German", "Header", "Lernen");
 
-        Math math = new Math("Mathematics", "Math", "Header", "Lernen");
+        Math math = new Math("/subjects/math" , "Mathematics", "Math", "Header", "Lernen");
 
-        Physics physics = new Physics("Physics", "Physics", "Header", "");
+        Physics physics = new Physics("/subjects/physics","Physics", "Physics", "Header", "");
 
-        ComputerScience computerScience = new ComputerScience("Information Technology", "Computer Science", "<Header>", "Develop");
+        ComputerScience computerScience = new ComputerScience("/subjects/computer_science", "Information Technology", "Computer Science", "<Header>", "Develop");
 
         subjectList.add(german);
         subjectList.add(math);

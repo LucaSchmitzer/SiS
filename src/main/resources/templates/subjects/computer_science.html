@@ -30,13 +30,33 @@
             <ul class="nav navbar-nav">
                 <li><a type="submit" th:href="@{/index}">Home</a></li>
                 <li><a type="submit" th:href="@{/start}">Start</a></li>
-                <li><a type="submit" th:href="@{/templates/subjects}">Subject</a></li>
+                <li><a type="submit" th:href="@{/subjects}">Subject</a></li>
                 <li><a type="submit" th:href="@{/we}">We</a></li>
                 <li><a type="submit" th:href="@{/about}">About</a></li>
                 <li><a type="submit" th:href="@{/sign_in}">Sign In</a></li>
             </ul>
         </div>
     </nav>
+    <h1>Computer Science</h1>
+    <div>
+        <div th:if="${not #lists.isEmpty(subjectList)}">
+        <h2>Subject List</h2>
+        <table border="5" cellspacing="20" cellpadding="40">
+            <thead>
+            <tr>
+                <th> Name </th>
+                <th> Header </th>
+                <th> Content </th>
+            </tr>
+            </thead>
+            <tr class="listRow" th:each="subject : ${subjectList}">
+                <td><a type="submit" th:href="@{${subject.url}}" th:text="${subject.name}"></a></td>
+                <td><a th:text="${subject.header}"></a></td>
+                <td><a th:text="${subject.content}"></a></td>
+            </tr>
+        </table>
+    </div>
+    </div>
 </form>
 </body>
 </html>

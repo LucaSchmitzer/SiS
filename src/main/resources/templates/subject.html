@@ -26,7 +26,7 @@
 
     <div th:if="${not #lists.isEmpty(subjectList)}">
         <h2>Subject List</h2>
-        <table  cellspacing="20" cellpadding="40">
+        <table border="5" cellspacing="20" cellpadding="40">
             <thead>
             <tr>
                 <th> Name </th>
@@ -36,7 +36,7 @@
             </tr>
             </thead>
             <tr class="listRow" th:each="subject : ${subjectList}">
-                <td><a type="submit" th:href="@{/subjects/(${subject.name})}" th:text="${subject.name}"></a></td>
+                <td><a type="submit" th:href="@{${subject.url}}" th:text="${subject.name}"></a></td>
                 <td><a th:text="${subject.header}"></a></td>
                 <td><a th:text="${subject.content}"></a></td>
                 <td><a th:text="${subject.info}"></a></td>
