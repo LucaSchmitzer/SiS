@@ -1,7 +1,5 @@
 package com.kaufland.sis.persistence.school.subject;
 
-import com.kaufland.sis.persistence.school.subject.topic.Topic;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,26 +17,17 @@ public class Subjects {
 
     private String name;
 
-    private Topic topic;
+    private String header;
 
-   /* public enum schoolSystem {
-        HIGHSCHOOL("high school"), SECONDARYSCHOOL("secondary school"),
-        ELEMENTARYSCHOOL("elementary school"), SECONDARYMODERNSCHOOL("secondary modern school");
+    private String content;
 
-        String name;
-
-        schoolSystem(String name) {
-            this.name = name;
-        }
-    }*/
 
     public Subjects() {
     }
 
-    public Subjects(String info, String name, Topic topic) {
+    public Subjects(String info, String name, String header, String content) {
         this.info = info;
         this.name = name;
-        this.topic = topic;
     }
 
     public String getInfo() {
@@ -57,5 +46,27 @@ public class Subjects {
         this.name = name;
     }
 
+    public long getId() {
+        return id;
+    }
 
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getHeader() {
+        return header;
+    }
+
+    public void setHeader(String header) {
+        this.header = header;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
 }

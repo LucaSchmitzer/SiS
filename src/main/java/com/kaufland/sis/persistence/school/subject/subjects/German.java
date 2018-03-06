@@ -6,8 +6,9 @@ import com.kaufland.sis.persistence.school.subject.topic.Topic;
 
 public class German extends Subjects {
 
-    public German(String info, String name, Topic topic) {
-        super(info, name, topic);
+
+    public German(String info, String name, String header, String content) {
+        super(info, name, header, content);
     }
 
     public German() {
