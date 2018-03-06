@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-public class ComputerScienceController {
+public class MathController {
 
-    private static final String URL = "/subjects/computer_science";
+    private static final String URL = "/subjects/math";
 
     @GetMapping(URL)
     public String getMapping() {
@@ -18,5 +18,4 @@ public class ComputerScienceController {
     public String submit() {
         return "redirect:" + URL;
     }
-
 }

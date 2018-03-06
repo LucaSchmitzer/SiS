@@ -8,6 +8,8 @@ public class ComputerScience extends Subject {
 
     private Exercise excersice;
 
+
+
     public ComputerScience(String url, String info, String name, String header, String content) {
         super(url, info, name, header, content);
     }

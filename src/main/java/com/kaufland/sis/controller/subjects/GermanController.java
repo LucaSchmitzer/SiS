@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-public class ComputerScienceController {
+public class GermanController {
 
-    private static final String URL = "/subjects/computer_science";
+    private static final String URL = "/subjects/german";
 
     @GetMapping(URL)
     public String getMapping() {
