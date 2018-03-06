@@ -8,14 +8,14 @@
 </head>
 <body>
 <form action="#" th:action="@{/subject}" th:object="${subject}" method="post" enctype="multipart/form-data">
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand">School Is Stupid</a>
             </div>
             <ul class="nav navbar-nav">
                 <li><a type="submit" th:href="@{/index}">Home</a></li>
-                <li type="submit" th:href="@{/start}"><a>Start</a></li>
+                <li><a type="submit" th:href="@{/start}">Start</a></li>
                 <li class="active"><a>SUBJECT</a></li>
                 <li><a type="submit" th:href="@{/we}">We</a></li>
                 <li><a type="submit" th:href="@{/about}">About</a></li>
@@ -26,7 +26,7 @@
 
     <div th:if="${not #lists.isEmpty(subjectList)}">
         <h2>Subject List</h2>
-        <table border="8" cellspacing="10" cellpadding="20">
+        <table  cellspacing="20" cellpadding="40">
             <thead>
             <tr>
                 <th> Name </th>
